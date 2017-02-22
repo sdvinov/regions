@@ -24,7 +24,7 @@ export default class BottomNav extends Component {
         >
           <Image
             style={styles.image}
-            source={require('./../img/icons/rus_icon.png')}
+            source={require('./../img/icons/rus.png')}
           />
         </TouchableHighlight>
         <TouchableHighlight
@@ -33,7 +33,7 @@ export default class BottomNav extends Component {
         >
           <Image
             style={styles.image}
-            source={require('./../img/icons/blr_icon.png')}
+            source={require('./../img/icons/blr.png')}
           />
         </TouchableHighlight>
         <TouchableHighlight
@@ -42,7 +42,7 @@ export default class BottomNav extends Component {
         >
           <Image
             style={styles.image}
-            source={require('./../img/icons/kaz_icon.png')}
+            source={require('./../img/icons/kaz.png')}
           />
         </TouchableHighlight>
         <TouchableHighlight
@@ -51,7 +51,7 @@ export default class BottomNav extends Component {
         >
           <Image
             style={styles.image}
-            source={require('./../img/icons/ukr_icon.png')}
+            source={require('./../img/icons/ukr.png')}
           />
         </TouchableHighlight>
         <TouchableHighlight
