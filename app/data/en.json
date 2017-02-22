@@ -1,0 +1,1021 @@
+{
+  "kz":{
+    "01":{
+      "name":"Astana",
+      "capital":""
+    },
+    "02":{
+      "name":"Almaty",
+      "capital":""
+    },
+    "03":{
+      "name":"Akmola Region",
+      "capital":"Kokshetau"
+    },
+    "04":{
+      "name":"Aktobe Region",
+      "capital":"Aktobe"
+    },
+    "05":{
+      "name":"Almaty Region",
+      "capital":"Taldykorgan"
+    },
+    "06":{
+      "name":"Atyrau Region",
+      "capital":"Atyrau"
+    },
+    "07":{
+      "name":"West Kazakhstan Region",
+      "capital":"Oral"
+    },
+    "08":{
+      "name":"Jambyl Region",
+      "capital":"Taraz"
+    },
+    "09":{
+      "name":"Karaganda Region",
+      "capital":"Karagandy"
+    },
+    "10":{
+      "name":"Kostanay Region",
+      "capital":"Karaganda"
+    },
+    "11":{
+      "name":"Kyzylorda Region",
+      "capital":"Kyzylorda"
+    },
+    "12":{
+      "name":"Mangystau Region",
+      "capital":"Aktau"
+    },
+    "13":{
+      "name":"South Kazakhstan Region",
+      "capital":"Shymkent"
+    },
+    "14":{
+      "name":"Pavlodar Region",
+      "capital":"Pavlodar"
+    },
+    "15":{
+      "name":"North Kazakhstan Region",
+      "capital":"Petropavl"
+    },
+    "16":{
+      "name":"East Kazakhstan Region",
+      "capital":"Oskemen"
+    }
+  },
+  "by":{
+    "1":{
+      "name":"Brest Region",
+      "capital":"Brest"
+    },
+    "2":{
+      "name":"Vitebsk Region",
+      "capital":"Vitebsk"
+    },
+    "3":{
+      "name":"Gomel Region",
+      "capital":"Gomel"
+    },
+    "4":{
+      "name":"Grodno Region",
+      "capital":"Grodno"
+    },
+    "5":{
+      "name":"Minsk Region",
+      "capital":"Minsk"
+    },
+    "6":{
+      "name":"Mogilev Region",
+      "capital":"Mogilev"
+    },
+    "7":{
+      "name":"Minsk City",
+      "capital":""
+    }
+  },
+  "ru":{
+    "01":{
+      "name":"Adygea Republic",
+      "capital":"Maykop",
+      "fed_dist":"South"
+    },
+    "02":{
+      "name":"Bashkortostan Republic",
+      "capital":"Ufa",
+      "fed_dist":"Volga"
+    },
+    "102":{
+      "name":"Bashkortostan Republic",
+      "capital":"Ufa",
+      "fed_dist":"Volga"
+    },
+    "03":{
+      "name":"Buryatia Republic",
+      "capital":"Ulan-Ude",
+      "fed_dist":"Siberia"
+    },
+    "04":{
+      "name":"Altay Republic",
+      "capital":"Gorno-Altaysk",
+      "fed_dist":"Siberia"
+    },
+    "05":{
+      "name":"Dagestan Republic",
+      "capital":"Makhachkala",
+      "fed_dist":"North Caucasus"
+    },
+    "06":{
+      "name":"Ingushetia Republic",
+      "capital":"Magas",
+      "fed_dist":"North Caucasus"
+    },
+    "07":{
+      "name":"Kabardino-Balkar Republic",
+      "capital":"Nalchik",
+      "fed_dist":"North Caucasus"
+    },
+    "08":{
+      "name":"Kalmykia Republic",
+      "capital":"Elista",
+      "fed_dist":"South"
+    },
+    "09":{
+      "name":"Karachay-Cherkess Republic",
+      "capital":"Cherkessk",
+      "fed_dist":"North Caucasus"
+    },
+    "10":{
+      "name":"Karelia Republic",
+      "capital":"Petrozavodsk",
+      "fed_dist":"North West"
+    },
+    "11":{
+      "name":"Komi Republic",
+      "capital":"Syktyvkar",
+      "fed_dist":"North West"
+    },
+    "12":{
+      "name":"Mari El Republic",
+      "capital":"Yoshkar-Ola",
+      "fed_dist":"Volga"
+    },
+    "13":{
+      "name":"Mordovia Republic",
+      "capital":"Saransk",
+      "fed_dist":"Volga"
+    },
+    "113":{
+      "name":"Mordovia Republic",
+      "capital":"Saransk",
+      "fed_dist":"Volga"
+    },
+    "14":{
+      "name":"Sakha (Yakutia) Republic",
+      "capital":"Yakutsk",
+      "fed_dist":"Far East"
+    },
+    "15":{
+      "name":"North Osetia - Alania Republic",
+      "capital":"Vladikavkaz",
+      "fed_dist":"North Caucasus"
+    },
+    "16":{
+      "name":"Tatarstan Republic",
+      "capital":"Kazan",
+      "fed_dist":"Volga"
+    },
+    "116":{
+      "name":"Tatarstan Republic",
+      "capital":"Kazan",
+      "fed_dist":"Volga"
+    },
+    "17":{
+      "name":"Tyva Republic",
+      "capital":"Kyzyl",
+      "fed_dist":"Siberia"
+    },
+    "18":{
+      "name":"Udmurt Republic",
+      "capital":"Izhevsk",
+      "fed_dist":"Volga"
+    },
+    "19":{
+      "name":"Khakassia Republic",
+      "capital":"Abakan",
+      "fed_dist":"Siberia"
+    },
+    "20":{
+      "name":"Chechen Republic",
+      "capital":"Grozny",
+      "fed_dist":"North Caucasus"
+    },
+    "95":{
+      "name":"Chechen Republic",
+      "capital":"Grozny",
+      "fed_dist":"North Caucasus"
+    },
+    "21":{
+      "name":"Chuvash Republic",
+      "capital":"Cheboksary",
+      "fed_dist":"Volga"
+    },
+    "121":{
+      "name":"Chuvash Republic",
+      "capital":"Cheboksary",
+      "fed_dist":"Volga"
+    },
+    "22":{
+      "name":"Altai Krai",
+      "capital":"Barnaul",
+      "fed_dist":"Siberia"
+    },
+    "23":{
+      "name":"Krasnodar Krai",
+      "capital":"Krasnodar",
+      "fed_dist":"South"
+    },
+    "93":{
+      "name":"Krasnodar Krai",
+      "capital":"Krasnodar",
+      "fed_dist":"South"
+    },
+    "123":{
+      "name":"Krasnodar Krai",
+      "capital":"Krasnodar",
+      "fed_dist":"South"
+    },
+    "24":{
+      "name":"Krasnoyarsk Krai",
+      "capital":"Krasnoyarsk",
+      "fed_dist":"Siberia"
+    },
+    "84":{
+      "name":"Krasnoyarsk Krai",
+      "capital":"Krasnoyarsk",
+      "fed_dist":"Siberia"
+    },
+    "88":{
+      "name":"Krasnoyarsk Krai",
+      "capital":"Krasnoyarsk",
+      "fed_dist":"Siberia"
+    },
+    "124":{
+      "name":"Krasnoyarsk Krai",
+      "capital":"Krasnoyarsk",
+      "fed_dist":"Siberia"
+    },
+    "25":{
+      "name":"Primorsky Krai",
+      "capital":"Vladivostok",
+      "fed_dist":"Far East"
+    },
+    "125":{
+      "name":"Primorsky Krai",
+      "capital":"Vladivostok",
+      "fed_dist":"Far East"
+    },
+    "26":{
+      "name":"Stavropol Krai",
+      "capital":"Stavropol",
+      "fed_dist":"North Caucasus"
+    },
+    "126":{
+      "name":"Stavropol Krai",
+      "capital":"Stavropol",
+      "fed_dist":"North Caucasus"
+    },
+    "27":{
+      "name":"Khabarovsk Krai",
+      "capital":"Khabarovsk",
+      "fed_dist":"Far East"
+    },
+    "28":{
+      "name":"Amur Oblast",
+      "capital":"Blagoveschensk",
+      "fed_dist":"Far East"
+    },
+    "29":{
+      "name":"Arkhangelsk Oblast",
+      "capital":"Arkhangelsk",
+      "fed_dist":"North West"
+    },
+    "30":{
+      "name":"Astrakhan Oblast",
+      "capital":"Astrakhan",
+      "fed_dist":"South"
+    },
+    "31":{
+      "name":"Belgorod Oblast",
+      "capital":"Belgorod",
+      "fed_dist":"Central"
+    },
+    "32":{
+      "name":"Bryansk Oblast",
+      "capital":"Bryansk",
+      "fed_dist":"Central"
+    },
+    "33":{
+      "name":"Vladimir Oblast",
+      "capital":"Vladimir",
+      "fed_dist":"Central"
+    },
+    "34":{
+      "name":"Volgograd Oblast",
+      "capital":"Volgograd",
+      "fed_dist":"South"
+    },
+    "134":{
+      "name":"Volgograd Oblast",
+      "capital":"Volgograd",
+      "fed_dist":"South"
+    },
+    "35":{
+      "name":"Vologda Oblast",
+      "capital":"Vologda",
+      "fed_dist":"North West"
+    },
+    "36":{
+      "name":"Voronezh Oblast",
+      "capital":"Voronezh",
+      "fed_dist":"Central"
+    },
+    "136":{
+      "name":"Voronezh Oblast",
+      "capital":"Voronezh",
+      "fed_dist":"Central"
+    },
+    "37":{
+      "name":"Ivanovo Oblast",
+      "capital":"Ivanovo",
+      "fed_dist":"Central"
+    },
+    "38":{
+      "name":"Irkutsk Oblast",
+      "capital":"Irkutsk",
+      "fed_dist":"Siberia"
+    },
+    "85":{
+      "name":"Irkutsk Oblast",
+      "capital":"Irkutsk",
+      "fed_dist":"Siberia"
+    },
+    "138":{
+      "name":"Irkutsk Oblast",
+      "capital":"Irkutsk",
+      "fed_dist":"Siberia"
+    },
+    "39":{
+      "name":"Kaliningrad Oblast",
+      "capital":"Kaliningrad",
+      "fed_dist":"North West"
+    },
+    "91":{
+      "name":"Kaliningrad Oblast",
+      "capital":"Kaliningrad",
+      "fed_dist":"North West"
+    },
+    "40":{
+      "name":"Kaluga Oblast",
+      "capital":"Kaluga",
+      "fed_dist":"Central"
+    },
+    "41":{
+      "name":"Kamchatka Krai",
+      "capital":"Petropavlovsk-Kamchatsky",
+      "fed_dist":"Far East"
+    },
+    "141":{
+      "name":"Kamchatka Krai",
+      "capital":"Petropavlovsk-Kamchatsky",
+      "fed_dist":"Far East"
+    },
+    "42":{
+      "name":"Kemerovo Oblast",
+      "capital":"Kemerovo",
+      "fed_dist":"Siberia"
+    },
+    "142":{
+      "name":"Kemerovo Oblast",
+      "capital":"Kemerovo",
+      "fed_dist":"Siberia"
+    },
+    "43":{
+      "name":"Kirov Oblast",
+      "capital":"Kirov",
+      "fed_dist":"Volga"
+    },
+    "44":{
+      "name":"Kostroma Oblast",
+      "capital":"Kostroma",
+      "fed_dist":"Central"
+    },
+    "45":{
+      "name":"Kurgan Oblast",
+      "capital":"Kurgan",
+      "fed_dist":"Ural"
+    },
+    "46":{
+      "name":"Kursk Oblast",
+      "capital":"Kursk",
+      "fed_dist":"Central"
+    },
+    "47":{
+      "name":"Leningrad Oblast",
+      "capital":"Saint Petersburg",
+      "fed_dist":"North West"
+    },
+    "48":{
+      "name":"Lipetsk Oblast",
+      "capital":"Lipetsk",
+      "fed_dist":"Central"
+    },
+    "49":{
+      "name":"Magadan Oblast",
+      "capital":"Magadan",
+      "fed_dist":"Far East"
+    },
+    "50":{
+      "name":"Moscow Oblast",
+      "capital":"Moscow",
+      "fed_dist":"Central"
+    },
+    "90":{
+      "name":"Moscow Oblast",
+      "capital":"Moscow",
+      "fed_dist":"Central"
+    },
+    "150":{
+      "name":"Moscow Oblast",
+      "capital":"Moscow",
+      "fed_dist":"Central"
+    },
+    "190":{
+      "name":"Moscow Oblast",
+      "capital":"Moscow",
+      "fed_dist":"Central"
+    },
+    "750":{
+      "name":"Moscow Oblast",
+      "capital":"Moscow",
+      "fed_dist":"Central"
+    },
+    "51":{
+      "name":"Murmansk Oblast",
+      "capital":"Murmansk",
+      "fed_dist":"North West"
+    },
+    "52":{
+      "name":"Nizhny Novgorod Oblast",
+      "capital":"Nizhny Novgorod",
+      "fed_dist":"Volga"
+    },
+    "152":{
+      "name":"Nizhny Novgorod Oblast",
+      "capital":"Nizhny Novgorod",
+      "fed_dist":"Volga"
+    },
+    "53":{
+      "name":"Novgorod Oblast",
+      "capital":"Novgorod",
+      "fed_dist":"North West"
+    },
+    "54":{
+      "name":"Novosibirisk Oblast",
+      "capital":"Novosibirisk",
+      "fed_dist":"Siberia"
+    },
+    "154":{
+      "name":"Novosibirisk Oblast",
+      "capital":"Novosibirisk",
+      "fed_dist":"Siberia"
+    },
+    "55":{
+      "name":"Omsk Oblast",
+      "capital":"Omsk",
+      "fed_dist":"Siberia"
+    },
+    "56":{
+      "name":"Orenburg Oblast",
+      "capital":"Orenburg",
+      "fed_dist":"Volga"
+    },
+    "57":{
+      "name":"Oryol Oblast",
+      "capital":"Oryol",
+      "fed_dist":"Central"
+    },
+    "58":{
+      "name":"Penza Oblast",
+      "capital":"Penza",
+      "fed_dist":"Volga"
+    },
+    "59":{
+      "name":"Perm Krai",
+      "capital":"Perm",
+      "fed_dist":"Volga"
+    },
+    "81":{
+      "name":"Perm Krai",
+      "capital":"Perm",
+      "fed_dist":"Volga"
+    },
+    "159":{
+      "name":"Perm Krai",
+      "capital":"Perm",
+      "fed_dist":"Volga"
+    },
+    "60":{
+      "name":"Pskov Oblast",
+      "capital":"Pskov",
+      "fed_dist":"North West"
+    },
+    "61":{
+      "name":"Rostov Oblast",
+      "capital":"Rostov-on-Don",
+      "fed_dist":"South"
+    },
+    "161":{
+      "name":"Rostov Oblast",
+      "capital":"Rostov-on-Don",
+      "fed_dist":"South"
+    },
+    "62":{
+      "name":"Ryazan Oblast",
+      "capital":"Ryazan",
+      "fed_dist":"Central"
+    },
+    "63":{
+      "name":"Samara Oblast",
+      "capital":"Samara",
+      "fed_dist":"Volga"
+    },
+    "163":{
+      "name":"Samara Oblast",
+      "capital":"Samara",
+      "fed_dist":"Volga"
+    },
+    "64":{
+      "name":"Saratov Oblast",
+      "capital":"Saratov",
+      "fed_dist":"Volga"
+    },
+    "164":{
+      "name":"Saratov Oblast",
+      "capital":"Saratov",
+      "fed_dist":"Volga"
+    },
+    "65":{
+      "name":"Sakhalin Oblast",
+      "capital":"Yuzhno-Sakhalinsk",
+      "fed_dist":"Far East"
+    },
+    "66":{
+      "name":"Sverdlovsk Oblast",
+      "capital":"Yekaterinburg",
+      "fed_dist":"Ural"
+    },
+    "96":{
+      "name":"Sverdlovsk Oblast",
+      "capital":"Yekaterinburg",
+      "fed_dist":"Ural"
+    },
+    "196":{
+      "name":"Sverdlovsk Oblast",
+      "capital":"Yekaterinburg",
+      "fed_dist":"Ural"
+    },
+    "67":{
+      "name":"Smolensk Oblast",
+      "capital":"Smolensk",
+      "fed_dist":"Central"
+    },
+    "68":{
+      "name":"Tambov Oblast",
+      "capital":"Tambov",
+      "fed_dist":"Central"
+    },
+    "69":{
+      "name":"Tver Oblast",
+      "capital":"Tver",
+      "fed_dist":"Central"
+    },
+    "70":{
+      "name":"Tomsk Oblast",
+      "capital":"Tomsk",
+      "fed_dist":"Siberia"
+    },
+    "71":{
+      "name":"Tula Oblast",
+      "capital":"Tula",
+      "fed_dist":"Central"
+    },
+    "72":{
+      "name":"Tyumen Oblast",
+      "capital":"Tyumen",
+      "fed_dist":"Ural"
+    },
+    "73":{
+      "name":"Ulyanovsk Oblast",
+      "capital":"Ulyanovsk",
+      "fed_dist":"Volga"
+    },
+    "173":{
+      "name":"Ulyanovsk Oblast",
+      "capital":"Ulyanovsk",
+      "fed_dist":"Volga"
+    },
+    "74":{
+      "name":"Chelyabinsk Oblast",
+      "capital":"Chelyabinsk",
+      "fed_dist":"Ural"
+    },
+    "174":{
+      "name":"Chelyabinsk Oblast",
+      "capital":"Chelyabinsk",
+      "fed_dist":"Ural"
+    },
+    "75":{
+      "name":"Zabaykalsky Krai",
+      "capital":"Chita",
+      "fed_dist":"Siberia"
+    },
+    "80":{
+      "name":"Zabaykalsky Krai",
+      "capital":"Chita",
+      "fed_dist":"Siberia"
+    },
+    "76":{
+      "name":"Yaroslavl Oblast",
+      "capital":"Yaroslavl",
+      "fed_dist":"Central"
+    },
+    "77":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "97":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "99":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "177":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "197":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "199":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "777":{
+      "name":"Moscow City",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "78":{
+      "name":"Saint Petersburg City",
+      "capital":"",
+      "fed_dist":"North West"
+    },
+    "98":{
+      "name":"Saint Petersburg City",
+      "capital":"",
+      "fed_dist":"North West"
+    },
+    "178":{
+      "name":"Saint Petersburg City",
+      "capital":"",
+      "fed_dist":"North West"
+    },
+    "198":{
+      "name":"Saint Petersburg City",
+      "capital":"",
+      "fed_dist":"North West"
+    },
+    "79":{
+      "name":"Jewish Autonomous Oblast",
+      "capital":"Birobidzhan",
+      "fed_dist":"Far East"
+    },
+    "82":{
+      "name":"Crymea Republic",
+      "capital":"Simferopol",
+      "fed_dist":"Crymea"
+    },
+    "83":{
+      "name":"Nenets Autonomous Okrug",
+      "capital":"Naryan-Mar",
+      "fed_dist":"North West"
+    },
+    "86":{
+      "name":"Khanty-Mansi Autonomous Okrug Yugra",
+      "capital":"Khanty-Mansiysk",
+      "fed_dist":"Ural"
+    },
+    "87":{
+      "name":"Chukotka Autonomous Okrug",
+      "capital":"Anadyr",
+      "fed_dist":"Far East"
+    },
+    "89":{
+      "name":"Yamalo-Nenets Autonomous Okrug",
+      "capital":"Salekhard",
+      "fed_dist":"Ural"
+    },
+    "92":{
+      "name":"Sevastopol City",
+      "capital":"",
+      "fed_dist":"Crymea"
+    },
+    "94":{
+      "name":"Baykonur",
+      "capital":"",
+      "fed_dist":"Kazakhstan"
+    }
+  },
+  "ua": {
+    "AA":{
+      "name":"Kiev",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "AB":{
+      "name":"Vinnytsia Oblast",
+      "capital":"Vinnytsia",
+      "fed_dist":"Central"
+    },
+    "AC":{
+      "name":"Volyn Oblast",
+      "fed_dist":"West"
+    },
+    "AE":{
+      "name":"Dnipropetrovsk Oblast",
+      "capital":"Dnipropetrovsk",
+      "fed_dist":"Central"
+    },
+    "AH":{
+      "name":"Donetsk Oblast",
+      "capital":"Donetsk",
+      "fed_dist":"East"
+    },
+    "AM":{
+      "name":"Zhytomyr Oblast",
+      "capital":"Zhytomyr",
+      "fed_dist":"Central"
+    },
+    "AO":{
+      "name":"Zakarpattia Oblast",
+      "capital":"Uzhhorod",
+      "fed_dist":"West"
+    },
+    "AP":{
+      "name":"Zaporizhia Oblast",
+      "capital":"Zaporizhia",
+      "fed_dist":"South"
+    },
+    "AT":{
+      "name":"Ivano-Frankivsk Oblast",
+      "capital":"Ivano-Frankivsk",
+      "fed_dist":"West"
+    },
+    "AI":{
+      "name":"Kiev Oblast",
+      "capital":"Kiev",
+      "fed_dist":"Central"
+    },
+    "AK":{
+      "name":"Autonomous Republic of Crymea",
+      "capital":"Simferopol",
+      "fed_dist":"Central"
+    },
+    "BA":{
+      "name":"Kirovohrad Oblast",
+      "capital":"Kropyvnytskyi",
+      "fed_dist":"Central"
+    },
+    "BB":{
+      "name":"Luhansk Oblast",
+      "capital":"Luhansk",
+      "fed_dist":"East"
+    },
+    "BC":{
+      "name":"Lviv Oblast",
+      "capital":"Lviv",
+      "fed_dist":"West"
+    },
+    "BE":{
+      "name":"Mykolaiv Oblast",
+      "capital":"Mykolaiv",
+      "fed_dist":"South"
+    },
+    "BH":{
+      "name":"Odessa Oblast",
+      "capital":"Odessa",
+      "fed_dist":"South"
+    },
+    "BI":{
+      "name":"Poltava Oblast",
+      "capital":"Poltava",
+      "fed_dist":"Central"
+    },
+    "BK":{
+      "name":"Rivne Oblast",
+      "capital":"Rivne",
+      "fed_dist":"West"
+    },
+    "BM":{
+      "name":"Sumy Oblast",
+      "capital":"Sumy",
+      "fed_dist":"Central"
+    },
+    "BO":{
+      "name":"Ternopil",
+      "capital":"Ternopil",
+      "fed_dist":"West"
+    },
+    "AX":{
+      "name":"Kharkiv Oblast",
+      "capital":"Kharkiv",
+      "fed_dist":"East"
+    },
+    "BT":{
+      "name":"Kherson Oblast",
+      "capital":"Kherson",
+      "fed_dist":"South"
+    },
+    "BX":{
+      "name":"Khmelnitskyi Oblast",
+      "capital":"Khmelnitskyi",
+      "fed_dist":"West"
+    },
+    "CA":{
+      "name":"Cherkasy Oblast",
+      "capital":"Cherkasy",
+      "fed_dist":"Central"
+    },
+    "CB":{
+      "name":"Chernihiv Oblast",
+      "capital":"Chernihiv",
+      "fed_dist":"Central"
+    },
+    "CE":{
+      "name":"Chernivtsi Oblast",
+      "capital":"Chernivtsi",
+      "fed_dist":"West"
+    },
+    "CH":{
+      "name":"Sevastopol City",
+      "capital":"",
+      "fed_dist":"South"
+    },
+    "KA":{
+      "name":"Kiev",
+      "capital":"",
+      "fed_dist":"Central"
+    },
+    "KB":{
+      "name":"Vinnytsia Oblast",
+      "capital":"Vinnytsia",
+      "fed_dist":"Central"
+    },
+    "KC":{
+      "name":"Volyn Oblast",
+      "capital":"Lutsk",
+      "fed_dist":"West"
+    },
+    "KE":{
+      "name":"Dnipropetrovsk Oblast",
+      "capital":"Dnipropetrovsk",
+      "fed_dist":"Central"
+    },
+    "KH":{
+      "name":"Donetsk Oblast",
+      "capital":"Donetsk",
+      "fed_dist":"East"
+    },
+    "KM":{
+      "name":"Zhytomyr Oblast",
+      "capital":"Zhytomyr",
+      "fed_dist":"Central"
+    },
+    "KO":{
+      "name":"Zakarpattia Oblast",
+      "capital":"Uzhhorod",
+      "fed_dist":"West"
+    },
+    "KP":{
+      "name":"Zaporizhia Oblast",
+      "capital":"Zaporizhia",
+      "fed_dist":"South"
+    },
+    "KT":{
+      "name":"Ivano-Frankivsk Oblast",
+      "capital":"Ivano-Frankivsk",
+      "fed_dist":"West"
+    },
+    "KI":{
+      "name":"Kiev Oblast",
+      "capital":"Kiev",
+      "fed_dist":"Central"
+    },
+    "KK":{
+      "name":"Autonomous Republic of Crymea",
+      "capital":"Simferopol",
+      "fed_dist":"Central"
+    },
+    "HA":{
+      "name":"Kirovohrad Oblast",
+      "capital":"Kropyvnytskyi",
+      "fed_dist":"Central"
+    },
+    "HB":{
+      "name":"Luhansk Oblast",
+      "capital":"Luhansk",
+      "fed_dist":"East"
+    },
+    "HC":{
+      "name":"Lviv Oblast",
+      "capital":"Lviv",
+      "fed_dist":"West"
+    },
+    "HE":{
+      "name":"Mykolaiv Oblast",
+      "capital":"Mykolaiv",
+      "fed_dist":"South"
+    },
+    "HH":{
+      "name":"Odessa Oblast",
+      "capital":"Odessa",
+      "fed_dist":"South"
+    },
+    "HI":{
+      "name":"Poltava Oblast",
+      "capital":"Poltava",
+      "fed_dist":"Central"
+    },
+    "HK":{
+      "name":"Rivne Oblast",
+      "capital":"Rivne",
+      "fed_dist":"West"
+    },
+    "HM":{
+      "name":"Sumy Oblast",
+      "capital":"Sumy",
+      "fed_dist":"Central"
+    },
+    "HO":{
+      "name":"Ternopil",
+      "capital":"Ternopil",
+      "fed_dist":"West"
+    },
+    "KX":{
+      "name":"Kharkiv Oblast",
+      "capital":"Kharkiv",
+      "fed_dist":"East"
+    },
+    "HT":{
+      "name":"Kherson Oblast",
+      "capital":"Kherson",
+      "fed_dist":"South"
+    },
+    "HX":{
+      "name":"Khmelnitskyi Oblast",
+      "capital":"Khmelnitskyi",
+      "fed_dist":"West"
+    },
+    "IA":{
+      "name":"Cherkasy Oblast",
+      "capital":"Cherkasy",
+      "fed_dist":"Central"
+    },
+    "IB":{
+      "name":"Chernihiv Oblast",
+      "capital":"Chernihiv",
+      "fed_dist":"Central"
+    },
+    "IE":{
+      "name":"Chernivtsi Oblast",
+      "capital":"Chernivtsi",
+      "fed_dist":"West"
+    },
+    "IH":{
+      "name":"Sevastopol City",
+      "capital":"",
+      "fed_dist":"South"
+    }
+  }
+}
