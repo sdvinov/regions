@@ -26,22 +26,13 @@ export default class Game extends Component {
 
   generateVariants() {
     allRegions = this.fillArrayWithRegions()
-    console.log(allRegions)
-    let variants = []
-    let rightVariant = Math.floor(Math.random() * allRegions.length)
-
-    variants.push(allRegions[rightVariant])
-    variants[0] = list[rightVariant]
-
-    for (region = 0; region < 3; region++) {
-      let variant = Math.floor(Math.random() * allRegions.length)
-      variant = variant.toString()
-      if (variant.length < 0) {
-        variant = '0' + variant
-      }
-      variants.push(allRegions[variant])
-      console.log(variant)
-      variants[region + 1] = list[variant]
+    let variants = [],
+      variantIndex,
+      variantObj
+    for (let i = 0; i < 4; i++) {
+      variantIndex = Math.floor(Math.random() * allRegions.length)
+      variantObj = list[allRegions[variantIndex]]
+      variants.push({index: variantIndex, num: allRegions[variantIndex], val: variantObj})
     }
     // let currentIndex = variants.length, temporaryValue, randomIndex;
     // while (0 !== currentIndex) {
@@ -51,7 +42,6 @@ export default class Game extends Component {
     //   variants[currentIndex] = variants[randomIndex];
     //   variants[randomIndex] = temporaryValue;
     // }
-    console.log(variants)
     return variants
   }
 
@@ -59,7 +49,11 @@ export default class Game extends Component {
     let variants = this.generateVariants()
     return (
       <View style={styles.container}>
-
+        <Text>{variants[0].num}</Text>
+        <Text>{variants[0].val.name}</Text>
+        <Text>{variants[1].val.name}</Text>
+        <Text>{variants[2].val.name}</Text>
+        <Text>{variants[3].val.name}</Text>
       </View>
     );
   }
