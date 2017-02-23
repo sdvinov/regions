@@ -3,8 +3,7 @@ import {
   AppRegistry,
   StyleSheet,
   Navigator,
-  View,
-  StatusBar
+  View
 } from 'react-native';
 
 import BottomNav from './app/components/BottomNav'
@@ -13,6 +12,7 @@ import Kaz from './app/components/Categories/Kaz'
 import Rus from './app/components/Categories/Rus'
 import Ukr from './app/components/Categories/Ukr'
 import Game from './app/components/Categories/Game'
+import Account from './app/components/Categories/Account'
 
 export default class regions extends Component {
   navigatorRenderScene(route, navigator) {
@@ -62,17 +62,23 @@ export default class regions extends Component {
             />
           </View>
         )
+      case 'Account':
+        return(
+          <View style={styles.container}>
+            <Account />
+            <BottomNav
+              navigator={navigator}
+            />
+          </View>
+        )
     }
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar
-         barStyle="light-content"
-        />
         <Navigator
-          initialRoute={{id: 'Rus'}}
+          initialRoute={{id: 'Account'}}
           renderScene={this.navigatorRenderScene}
         />
       </View>

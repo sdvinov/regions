@@ -4,7 +4,8 @@ import {
   View,
   Image,
   TouchableHighlight,
-  Navigator
+  Navigator,
+  Text
 } from 'react-native';
 
 export default class BottomNav extends Component {
@@ -20,6 +21,7 @@ export default class BottomNav extends Component {
       <View style={styles.navbar}>
         <TouchableHighlight
           style={styles.bottomIconEliment}
+          underlayColor = 'rgba(0,0,0,0)'
           onPress={() => this.onButtonPress('Rus')}
         >
           <Image
@@ -29,6 +31,7 @@ export default class BottomNav extends Component {
         </TouchableHighlight>
         <TouchableHighlight
           style={styles.bottomIconEliment}
+          underlayColor = 'rgba(0,0,0,0)'
           onPress={() => this.onButtonPress('Blr')}
         >
           <Image
@@ -38,6 +41,7 @@ export default class BottomNav extends Component {
         </TouchableHighlight>
         <TouchableHighlight
           style={styles.bottomIconEliment}
+          underlayColor = 'rgba(0,0,0,0)'
           onPress={() => this.onButtonPress('Kaz')}
         >
           <Image
@@ -47,6 +51,7 @@ export default class BottomNav extends Component {
         </TouchableHighlight>
         <TouchableHighlight
           style={styles.bottomIconEliment}
+          underlayColor = 'rgba(0,0,0,0)'
           onPress={() => this.onButtonPress('Ukr')}
         >
           <Image
@@ -56,12 +61,20 @@ export default class BottomNav extends Component {
         </TouchableHighlight>
         <TouchableHighlight
           style={styles.bottomIconEliment}
+          underlayColor = 'rgba(0,0,0,0)'
           onPress={() => this.onButtonPress('Game')}
         >
           <Image
             style={styles.image}
             source={require('./../img/icons/game_icon.png')}
           />
+        </TouchableHighlight>
+        <TouchableHighlight
+          style={styles.bottomIconEliment}
+          underlayColor = 'rgba(0,0,0,0)'
+          onPress={() => this.onButtonPress('Account')}
+        >
+          <Text>A</Text>
         </TouchableHighlight>
       </View>
     );
@@ -72,7 +85,7 @@ const styles = StyleSheet.create({
   navbar: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 20
+    marginBottom: 10
   },
   bottomIconEliment: {
     flex: 1,
