@@ -1,10 +1,8 @@
 import {
-    AppRegistry,
     TextInput,
     Text,
     View,
     StyleSheet,
-    TouchableHighlight,
     AsyncStorage
 } from "react-native"
 
@@ -17,8 +15,7 @@ export default class Account extends Component {
     super(props)
     this.state = {
       email: "",
-      password: "",
-      isLoggedIn: ''
+      password: ""
     }
     this.signup = this.signup.bind(this)
     this.login = this.login.bind(this)
@@ -74,8 +71,7 @@ export default class Account extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#222222'
+    flex: 1
   },
   form: {
     color: '#111111',

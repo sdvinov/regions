@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import {
   View,
-  StyleSheet,
   Text,
-  TouchableHighlight,
-  Image,
   TextInput
 } from 'react-native'
 

@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import {
   View,
   Text,
-  TouchableHighlight,
-  Image,
   TextInput
 } from 'react-native'
 

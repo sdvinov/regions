@@ -3,8 +3,7 @@ import {
   StyleSheet,
   View,
   Image,
-  TouchableHighlight,
-  Navigator
+  TouchableHighlight
 } from 'react-native';
 
 export default class BottomNav extends Component {
@@ -87,8 +86,7 @@ const styles = StyleSheet.create({
   navbar: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 10,
-    backgroundColor: '#222222'
+    marginBottom: 10
   },
   bottomIconEliment: {
     flex: 1,

@@ -4,8 +4,7 @@ import {
 
 module.exports = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#222222'
+    flex: 1
   },
   input: {
     backgroundColor: '#eeeeee',
