@@ -33,16 +33,21 @@ export default class Blr extends Component {
       foundRegion = list[this.state.code]
     }
 
+    if (this.state.code.length == 0) {
+      foundRegion.name = ''
+    }
+
     return(
       <View style={styles.container}>
         <TextInput
+          placeholder='1'
           style={styles.input}
           maxLength = {1}
           value = {this.state.code}
           onChangeText={(code) => this.setState({code})}
         />
         <Text style={styles.regionName}>{foundRegion.name}</Text>
-        <Text style={styles.stateName}>{foundRegion.fed_dist}</Text>
+        <Text style={styles.stateName}>{(foundRegion.capital) ? 'Capital: ' + foundRegion.capital : ''}</Text>
       </View>
     )
   }

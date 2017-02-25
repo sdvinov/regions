@@ -14,6 +14,14 @@ import Ukr from './app/components/Categories/Ukr'
 import Game from './app/components/Categories/Game'
 import Account from './app/components/Categories/Account'
 
+import * as firebase from 'firebase'
+import config from './app/util/config'
+const firebaseApp = firebase.initializeApp({
+  apiKey: config.API_KEY,
+  authDomain: config.AUTH_DOMAIN,
+  databaseURL: config.DATABASE_URL,
+})
+
 export default class regions extends Component {
   navigatorRenderScene(route, navigator) {
     switch(route.id) {

@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
-  View
+  View,
+  AsyncStorage
 } from 'react-native';
 
 const list = require('./../../data/en').ru
+
+import * as firebase from 'firebase'
 
 export default class Game extends Component {
   constructor(props) {
@@ -14,6 +17,20 @@ export default class Game extends Component {
       correct: 0,
       wrong: 0
     }
+  }
+
+  componentWillMount() {
+    AsyncStorage.getItem('user').then((user_data) => {
+      let user = JSON.parse(user_data)
+      if (user) {
+        firebase.database().ref(`${user.uid}`).on('value', (snapshot) => {
+          this.setState({
+            correct: snapshot.val().score.correct,
+            wrong: snapshot.val().score.wrong
+          })
+        })
+      }
+    })
   }
 
   fillArrayWithRegions() {
@@ -44,7 +61,6 @@ export default class Game extends Component {
     }
     let rightVariant = Math.floor(Math.random() * 4)
     variants[rightVariant].isCorrect = true
-    console.log(variants)
     return variants
   }
 
@@ -67,15 +83,37 @@ export default class Game extends Component {
 
   checkAnswer (variants, correctAnswer, answer) {
     let currentCount
+    let wrongAnswers = this.state.wrong
+    let correctAnswers = this.state.correct
     if (correctAnswer == variants[answer - 1].val.name) {
       currentCount = this.state.correct
-      console.log('correct: ' + currentCount)
       currentCount++
+      AsyncStorage.getItem('user').then((user) => {
+        let u = JSON.parse(user)
+        if (u) {
+          firebase.database().ref(`${u.uid}`).set({
+            score: {
+              correct: currentCount,
+              wrong: wrongAnswers
+            }
+          })
+        }
+      })
       return this.setState({correct: currentCount})
     } else {
       currentCount = this.state.wrong
-      console.log('wrong: ' + currentCount)
       currentCount++
+      AsyncStorage.getItem('user').then((user) => {
+        let u = JSON.parse(user)
+        if (u) {
+          firebase.database().ref(`${u.uid}`).set({
+            score: {
+              correct: correctAnswers,
+              wrong: currentCount
+            }
+          })
+        }
+      })
       return this.setState({wrong: currentCount})
     }
   }
@@ -84,7 +122,6 @@ export default class Game extends Component {
     let variants = this.generateVariants()
     let correctAnswer = this.findCorrectAnswer(variants, 'string')
     let displayedNumber = this.findCorrectAnswer(variants, 'integer')
-    console.log(this.state)
     return (
       <View style={styles.container}>
         <View style={styles.numberContainer}>
@@ -118,7 +155,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#333333',
+    backgroundColor: '#222222',
   },
   displayedNumber: {
     fontSize: 180,

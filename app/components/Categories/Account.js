@@ -12,25 +12,13 @@ import React, {Component} from "react"
 
 import * as firebase from 'firebase'
 
-import config from './../../util/config'
-
-const firebaseApp = firebase.initializeApp({
-  apiKey: config.API_KEY,
-  authDomain: config.AUTH_DOMAIN,
-  databaseURL: config.DATABASE_URL,
-})
-
-const dbRef = firebaseApp.database().ref('regions')
-const userRef = firebaseApp.database().ref('user')
-const connectedRef = firebaseApp.database().ref('.info/connected')
-
 export default class Account extends Component {
   constructor(props) {
     super(props)
     this.state = {
       email: "",
       password: "",
-      response: ""
+      isLoggedIn: ''
     }
     this.signup = this.signup.bind(this)
     this.login = this.login.bind(this)
@@ -39,13 +27,11 @@ export default class Account extends Component {
   signup() {
     firebase.auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password).then((user) => {
-        AsyncStorage.setItem('user', JSON.stringify(user))
-        console.log(user)
-        AsyncStorage.getItem('user').then((user) => {
-          let userRef = dbRef.child(user)
-          userRef.addItem({
-            user: user.uid
-          })
+        firebase.database().ref(`${user.uid}`).set({
+          score: {
+            correct: 0,
+            wrong: 0
+          }
         })
       })
       .catch((error) => console.log(error))
@@ -94,11 +80,14 @@ const styles = StyleSheet.create({
   form: {
     color: '#111111',
     backgroundColor: '#eeeeee',
-    height: 30,
+    height: 50,
     marginVertical: 20,
     textAlign: 'center'
   },
   button: {
-    color: '#888888'
+    color: '#eeeeee',
+    textAlign: 'center',
+    marginVertical: 20,
+    fontSize: 30
   }
 })

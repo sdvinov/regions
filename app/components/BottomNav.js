@@ -4,8 +4,7 @@ import {
   View,
   Image,
   TouchableHighlight,
-  Navigator,
-  Text
+  Navigator
 } from 'react-native';
 
 export default class BottomNav extends Component {
@@ -74,7 +73,10 @@ export default class BottomNav extends Component {
           underlayColor = 'rgba(0,0,0,0)'
           onPress={() => this.onButtonPress('Account')}
         >
-          <Text>A</Text>
+        <Image
+          style={styles.image}
+          source={require('./../img/icons/profile.png')}
+        />
         </TouchableHighlight>
       </View>
     );
@@ -94,7 +96,7 @@ const styles = StyleSheet.create({
     height: 70
   },
   image: {
-    height: 70,
-    width: 70
+    height: 50,
+    width: 50
   }
 });
