@@ -4,7 +4,8 @@ import {
     Text,
     View,
     StyleSheet,
-    TouchableHighlight
+    TouchableHighlight,
+    AsyncStorage
 } from "react-native"
 
 import React, {Component} from "react"
@@ -19,7 +20,8 @@ const firebaseApp = firebase.initializeApp({
   databaseURL: config.DATABASE_URL,
 })
 
-const itemsRef = firebaseApp.database().ref('regions')
+const dbRef = firebaseApp.database().ref('regions')
+const userRef = firebaseApp.database().ref('user')
 const connectedRef = firebaseApp.database().ref('.info/connected')
 
 export default class Account extends Component {
@@ -34,41 +36,32 @@ export default class Account extends Component {
     this.login = this.login.bind(this)
   }
 
-  async signup() {
-    try {
-      await firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
-      this.setState({
-        response: "account created"
+  signup() {
+    firebase.auth()
+      .createUserWithEmailAndPassword(this.state.email, this.state.password).then((user) => {
+        AsyncStorage.setItem('user', JSON.stringify(user))
+        console.log(user)
+        AsyncStorage.getItem('user').then((user) => {
+          let userRef = dbRef.child(user)
+          userRef.addItem({
+            user: user.uid
+          })
+        })
       })
-      console.log('signedup')
-    } catch (error) {
-      this.setState({
-        response: error.toString()
-      })
-      console.log(error)
-    }
+      .catch((error) => console.log(error))
   }
 
-  async login() {
-    try {
-      await firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-      this.setState({
-        response: "Logged In!"
-      })
-    } catch (error) {
-      this.setState({
-        response: error.toString()
-      })
-    }
+  login() {
+    firebase.auth()
+      .signInWithEmailAndPassword(this.state.email, this.state.password).then((user)=>{
+        AsyncStorage.setItem('user', JSON.stringify(user))
+      }).catch((error) => console.log(error))
   }
 
-  async logout() {
-    try {
-      await firebase.auth().signOut();
-      console.log('loggedout')
-    } catch (error) {
-      console.log(error);
-    }
+  logout() {
+    AsyncStorage.removeItem('user').then(()=>{
+      firebase.auth().signOut()
+    })
   }
 
   render() {
@@ -96,10 +89,11 @@ export default class Account extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#222222'
   },
   form: {
     color: '#111111',
-    backgroundColor: '#dddddd',
+    backgroundColor: '#eeeeee',
     height: 30,
     marginVertical: 20,
     textAlign: 'center'

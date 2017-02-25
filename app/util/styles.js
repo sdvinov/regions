@@ -4,14 +4,15 @@ import {
 
 module.exports = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: '#222222'
   },
   input: {
-    backgroundColor: 'rgb(221,221,221)',
+    backgroundColor: '#eeeeee',
     height: 250,
     textAlign: 'center',
     fontSize: 180,
-    color: 'rgb(51,51,51)'
+    color: '#222222'
   },
   regionName: {
     marginHorizontal: 20,

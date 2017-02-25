@@ -85,7 +85,8 @@ const styles = StyleSheet.create({
   navbar: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 10
+    marginBottom: 10,
+    backgroundColor: '#222222'
   },
   bottomIconEliment: {
     flex: 1,
