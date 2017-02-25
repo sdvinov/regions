@@ -29,12 +29,31 @@ export default class Kaz extends Component {
 
   render() {
     let foundRegion = {name: 'Region not found', capital: ''}
-    if (this.state.code.length > 0 && list[this.state.code]) {
-      foundRegion = list[this.state.code]
+    let code = this.state.code
+
+    if (code.length < 2 && code && code != 0) {
+      code = '0' + code
     }
 
-    if (this.state.code.length == 0) {
+    if (code == 0) {
+      code = ''
+    }
+
+    if (code.length == 0) {
       foundRegion.name = ''
+    }
+
+    if (code.length > 2) {
+      if (code.charAt(0) == 0) {
+        code = code.substr(1)
+      }
+      if (code.charAt(1) != 0 && code.length > 2) {
+        code = code.slice(0, -1)
+      }
+    }
+
+    if (code.length > 0 && list[code]) {
+      foundRegion = list[code]
     }
 
     return(
@@ -42,8 +61,8 @@ export default class Kaz extends Component {
         <TextInput
           placeholder='01'
           style={styles.input}
-          maxLength = {2}
-          value = {this.state.code}
+          maxLength = {3}
+          value = {code}
           onChangeText={(code) => this.setState({code})}
         />
         <Text style={styles.regionName}>{foundRegion.name}</Text>

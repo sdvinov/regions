@@ -29,11 +29,12 @@ export default class Blr extends Component {
 
   render() {
     let foundRegion = {name: 'Region not found', capital: ''}
-    if (this.state.code.length > 0 && list[this.state.code]) {
-      foundRegion = list[this.state.code]
+    let code = this.state.code
+    if (code.length > 0 && list[code]) {
+      foundRegion = list[code]
     }
 
-    if (this.state.code.length == 0) {
+    if (code.length == 0) {
       foundRegion.name = ''
     }
 
@@ -43,7 +44,7 @@ export default class Blr extends Component {
           placeholder='1'
           style={styles.input}
           maxLength = {1}
-          value = {this.state.code}
+          value = {code}
           onChangeText={(code) => this.setState({code})}
         />
         <Text style={styles.regionName}>{foundRegion.name}</Text>

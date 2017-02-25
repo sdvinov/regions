@@ -30,21 +30,24 @@ export default class Ukr extends Component {
 
   render() {
     let foundRegion = {name: 'Region not found', capital:'', fed_dist: ''}
-    if (this.state.code.length > 0 && list[this.state.code]) {
-      foundRegion = list[this.state.code]
+    let code = this.state.code
+    code = code.toUpperCase()
+
+    if (code.length > 0 && list[code]) {
+      foundRegion = list[code]
     }
 
-    if (this.state.code.length == 0) {
+    if (code.length == 0) {
       foundRegion.name = ''
     }
 
     return(
       <View style={styles.container}>
         <TextInput
-          placeholder='KA'
+          placeholder='AA'
           style={styles.input}
           maxLength = {2}
-          value = {this.state.code}
+          value = {code}
           onChangeText={(code) => this.setState({code})}
         />
         <Text style={styles.regionName}>{foundRegion.name}</Text>

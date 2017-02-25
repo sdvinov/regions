@@ -86,7 +86,7 @@ export default class regions extends Component {
     return (
       <View style={styles.container}>
         <Navigator
-          initialRoute={{id: 'Account'}}
+          initialRoute={{id: 'Rus'}}
           renderScene={this.navigatorRenderScene}
         />
       </View>
