@@ -85,13 +85,12 @@ export default class BottomNav extends Component {
 const styles = StyleSheet.create({
   navbar: {
     flexDirection: 'row',
-    justifyContent: 'center',
-    marginBottom: 10
+    justifyContent: 'center'
   },
   bottomIconEliment: {
     flex: 1,
     alignItems: 'center',
-    height: 70
+    height: 55
   },
   image: {
     height: 50,

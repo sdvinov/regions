@@ -3,7 +3,8 @@ import {
   AppRegistry,
   StyleSheet,
   Navigator,
-  View
+  View,
+  StatusBar
 } from 'react-native';
 
 import BottomNav from './app/components/BottomNav'
@@ -28,6 +29,9 @@ export default class regions extends Component {
       case 'Blr':
         return(
           <View style={styles.container}>
+            <StatusBar
+              barStyle="dark-content"
+            />
             <Blr />
             <BottomNav
               navigator={navigator}
@@ -37,6 +41,9 @@ export default class regions extends Component {
       case 'Kaz':
         return(
           <View style={styles.container}>
+            <StatusBar
+              barStyle="dark-content"
+            />
             <Kaz />
             <BottomNav
               navigator={navigator}
@@ -46,6 +53,9 @@ export default class regions extends Component {
       case 'Rus':
         return(
           <View style={styles.container}>
+            <StatusBar
+              barStyle="dark-content"
+            />
             <Rus />
             <BottomNav
               navigator={navigator}
@@ -55,6 +65,9 @@ export default class regions extends Component {
       case 'Ukr':
         return(
           <View style={styles.container}>
+            <StatusBar
+              barStyle="dark-content"
+            />
             <Ukr />
             <BottomNav
               navigator={navigator}
@@ -64,6 +77,9 @@ export default class regions extends Component {
       case 'Game':
         return(
           <View style={styles.container}>
+            <StatusBar
+              barStyle="dark-content"
+            />
             <Game />
             <BottomNav
               navigator={navigator}
@@ -73,6 +89,9 @@ export default class regions extends Component {
       case 'Account':
         return(
           <View style={styles.container}>
+            <StatusBar
+              barStyle="light-content"
+            />
             <Account />
             <BottomNav
               navigator={navigator}
