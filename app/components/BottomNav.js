@@ -8,6 +8,7 @@ import {
 
 export default class BottomNav extends Component {
 
+  // Get what was pressed
   onButtonPress(id) {
     this.props.navigator.push({
       id: id
@@ -15,6 +16,7 @@ export default class BottomNav extends Component {
   }
 
   render() {
+    // Render response
     return (
       <View style={styles.navbar}>
         <TouchableHighlight
@@ -82,6 +84,7 @@ export default class BottomNav extends Component {
   }
 }
 
+// Styling
 const styles = StyleSheet.create({
   navbar: {
     flexDirection: 'row',

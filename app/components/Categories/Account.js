@@ -13,14 +13,17 @@ import * as firebase from 'firebase'
 export default class Account extends Component {
   constructor(props) {
     super(props)
+    // Set state
     this.state = {
       email: "",
       password: ""
     }
+    // Bind this to this document
     this.signup = this.signup.bind(this)
     this.login = this.login.bind(this)
   }
 
+  // Sign up function using Firebase
   signup() {
     firebase.auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password).then((user) => {
@@ -34,13 +37,16 @@ export default class Account extends Component {
       .catch((error) => console.log(error))
   }
 
+  // Login function using login
   login() {
     firebase.auth()
       .signInWithEmailAndPassword(this.state.email, this.state.password).then((user)=>{
+        // Set user data to AsyncStorage
         AsyncStorage.setItem('user', JSON.stringify(user))
       }).catch((error) => console.log(error))
   }
 
+  // Logout function. Remove User data from AsyncStorage
   logout() {
     AsyncStorage.removeItem('user').then(()=>{
       firebase.auth().signOut()
@@ -48,6 +54,7 @@ export default class Account extends Component {
   }
 
   render() {
+    // Render response
     return(
       <View style={styles.container}>
         <Text style={styles.header}>Account</Text>
@@ -69,6 +76,7 @@ export default class Account extends Component {
   }
 }
 
+// Styling
 const styles = StyleSheet.create({
   container: {
     flex: 1

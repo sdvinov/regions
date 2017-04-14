@@ -7,6 +7,7 @@ import {
   StatusBar
 } from 'react-native';
 
+// Load components
 import BottomNav from './app/components/BottomNav'
 import Blr from './app/components/Categories/Blr'
 import Kaz from './app/components/Categories/Kaz'
@@ -15,8 +16,11 @@ import Ukr from './app/components/Categories/Ukr'
 import Game from './app/components/Categories/Game'
 import Account from './app/components/Categories/Account'
 
+// Load Firebase
 import * as firebase from 'firebase'
+// Load config
 import config from './app/util/config'
+// Initialize Firebase
 const firebaseApp = firebase.initializeApp({
   apiKey: config.API_KEY,
   authDomain: config.AUTH_DOMAIN,
@@ -24,6 +28,7 @@ const firebaseApp = firebase.initializeApp({
 })
 
 export default class regions extends Component {
+  // Switcher for Navigator. On each id render different components
   navigatorRenderScene(route, navigator) {
     switch(route.id) {
       case 'Blr':
@@ -102,6 +107,7 @@ export default class regions extends Component {
   }
 
   render() {
+    // Return Navigator
     return (
       <View style={styles.container}>
         <Navigator
@@ -113,6 +119,7 @@ export default class regions extends Component {
   }
 }
 
+// Styling
 const styles = StyleSheet.create({
   container: {
     flex: 1,
